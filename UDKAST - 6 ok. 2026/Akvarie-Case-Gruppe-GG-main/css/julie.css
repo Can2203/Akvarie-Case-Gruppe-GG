@@ -1,0 +1,114 @@
+
+
+/*FARVEPALETTE*/
+
+:root{
+    --backgroundcolor:#5792b5;
+    --overskrift:#062344;
+    --skrift:#EFEFEF;
+    --navbar:#0A4061;
+    --knapfarve:#5089A5
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*BODY*/
+
+body{
+    background-color: var(--backgroundcolor);
+}
+
+/*--------------------------------------------------------------------*/
+
+
+
+
+
+
+/*SKRIFT*/
+
+h1{
+    color:var(--overskrift);
+    font-size:85px;
+    text-align:center;
+    margin-top:100px;
+    font-family:Barlow-BlackItalic;
+    margin-top:150px;
+}
+
+h2{
+    color:var(--skrift);
+    font-family:Barlow-bold;
+    text-align:center;
+    margin-top:-40px;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*NAVIGATIONS BAR*/
+
+nav{
+    display:flex;
+    gap:100px;
+    font-size:20px;
+    background-color:var(--navbar);
+    top:0;
+    left:0;
+    right:0;
+    position:fixed;
+
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--skrift);
+    padding: 25px;
+    align-items:center;
+    text-align:center;
+    margin-left:40px;
+    
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*LOGO*/
+
+.logo{
+    width:40px;
+    margin-top:70px;
+    display:center;
+    margin-left:700px;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*PLAYKNAP*/
+
+.Play{
+    width: 150px;
+    height:150px;
+    border-radius:100%;
+    background-color: var(--knapfarve);
+    margin-left:700px;
+    margin-top:50px;
+}
+
+.Play img{
+    margin-left:10px;
+    width:40px;
+    margin-top:10px;
+}
+
+
+
+/*--------------------------------------------------------------------*/
+
+
+
+
+
