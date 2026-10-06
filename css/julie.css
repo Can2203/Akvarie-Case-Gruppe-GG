@@ -94,7 +94,7 @@ nav a{
     height:150px;
     border-radius:100%;
     background-color: var(--knapfarve);
-    margin-left:700px;
+    margin-left:650px;
     margin-top:50px;
 }
 
@@ -102,6 +102,41 @@ nav a{
     margin-left:10px;
     width:40px;
     margin-top:10px;
+}
+
+.Tang{
+    display:flex;
+}
+
+.TangHojre{
+    display:flex;
+    margin-top:-10%;
+}
+
+.Tangvenstre1{
+    margin-top:-500px;
+}
+
+.Tangvenstre2{
+    margin-bottom:0px;
+    margin-top:-150px;
+    margin-left:-120px;
+}
+
+.Tanghojre1{
+    margin-bottom:0px;
+    margin-top:-150px;
+}
+
+.Tanghojre2{
+    margin-bottom:0px;
+}
+
+
+
+.TangVenstre{
+    display:flex;
+    margin-bottom:0px;
 }
 
 
