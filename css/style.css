@@ -1,0 +1,26 @@
+
+
+body{
+    background-image: url("../images/Baggrund.jpg");
+    background-size: cover;
+    height:100vh;
+    margin: 0;
+    background-position: bottom;
+}
+
+.baggrund-tekst{
+   background-size: cover;
+   height:100vh;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Barlow', sans-serif;
+   font-weight: 900;
+   font-style:italic;
+   font-size: 50px;
+   text-transform:uppercase;
+   line-height:normal;
+   color: #062344;
+   text-shadow: 0 4px 4px rgba(76, 189, 214, 0.50);
+}
