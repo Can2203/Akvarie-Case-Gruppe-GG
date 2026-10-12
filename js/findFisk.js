@@ -46,3 +46,16 @@ const assetLibrary = [
 ];
 
 const seaItems = Array.from(document.querySelectorAll('.sea-item'));
+
+function toAssetUrl(path) {
+  return path.split('/').map((segment) => encodeURIComponent(segment)).join('/');
+}
+
+function shuffleArray(items) {
+  const clone = [...items];
+  for (let i = clone.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [clone[i], clone[j]] = [clone[j], clone[i]];
+  }
+  return clone;
+}
