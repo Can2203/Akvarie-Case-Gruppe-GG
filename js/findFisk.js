@@ -1,3 +1,15 @@
+// Hent elementer
+const startScreen = document.getElementById('start-screen');
+const playScreen = document.getElementById('play-screen');
+const targetPrompt = document.getElementById('target-prompt');
+const successMessage = document.getElementById('success-message');
+const hiddenFish = document.getElementById('hidden-fish');
+const targetFishImage = document.querySelector('.target-img');
+const successFishImage = document.querySelector('.target-img-large');
+const scoreLabel = document.createElement('div');
+const errorMessage = document.createElement('div');
+
+
 const fishOptions = [
   'Fisk-svg/Antais.svg',
   'Fisk-svg/Hugofisk.svg',
