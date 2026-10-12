@@ -1,0 +1,42 @@
+<svg width="217" height="192" viewBox="0 0 217 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_in_626_356)">
+<path d="M87.0309 182.355C41.0734 164.954 -31.0818 97.7109 14.5558 79.487C49.4963 65.5346 122.105 56.1132 157.174 0.00330421C196.172 -0.65166 225.564 96.2407 213.278 133.259C204.938 158.388 190.488 171.104 166.52 182.355C138.42 195.546 116.062 193.347 87.0309 182.355Z" fill="#F5B343"/>
+</g>
+<g filter="url(#filter1_i_626_356)">
+<path d="M168.864 49.0996C168.864 67.1763 143.743 109.885 112.754 109.885C81.7654 109.885 42.6167 116.272 42.6167 98.1957C42.6167 80.1189 81.7654 70.1418 112.754 70.1418C143.743 70.1418 168.864 31.0229 168.864 49.0996Z" fill="#9C6C26"/>
+</g>
+<defs>
+<filter id="filter0_in_626_356" x="0" y="0" width="216.107" height="205.47" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="14.0274"/>
+<feGaussianBlur stdDeviation="23.8467"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_626_356"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.047525875270366669 0.035644404590129852" stitchTiles="stitch" numOctaves="3" result="noise" seed="3300" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="effect1_innerShadow_626_356" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.27)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect2_noise_626_356">
+<feMergeNode in="effect1_innerShadow_626_356" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<filter id="filter1_i_626_356" x="42.6167" y="44.3289" width="154.302" height="71.3269" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="28.0549" dy="4.67582"/>
+<feGaussianBlur stdDeviation="19.4046"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_626_356"/>
+</filter>
+</defs>
+</svg>
