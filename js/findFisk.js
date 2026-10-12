@@ -9,6 +9,9 @@ const successFishImage = document.querySelector('.target-img-large');
 const scoreLabel = document.createElement('div');
 const errorMessage = document.createElement('div');
 
+let score = 0;
+let roundTimer = null;
+
 
 const fishOptions = [
   'Fisk-svg/Antais.svg',
@@ -41,3 +44,5 @@ const assetLibrary = [
   'Assets/Property 1=VandMandLilla.svg',
   'Assets/Søstjerne.svg'
 ];
+
+const seaItems = Array.from(document.querySelectorAll('.sea-item'));
