@@ -16,7 +16,7 @@
         <div class="menu-cards" role="list">
             <article class="card" role="listitem">
                 <img src="Fisk-svg/KongeFebars.svg" alt="Find fisken cover">
-                <button type="button" class="btn-play">FIND FISKEN</button>
+                <button type="button" class="btn-play"onclick="startGame()">FIND FISKEN</button>
             </article>
 
             <article class="card" role="listitem">
@@ -28,6 +28,29 @@
                 <img src="Fisk-svg/Ildhalekutling.svg" alt="Ildhalekutling">
                 <button type="button" class="btn-play disabled"disabled>SPIL</button>
             </article>
+
+            <section id="play-screen" class="screen" aria-label="Spilsscene">
+                <div id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
+                    <div class="bubble-circle">
+                    <img src="Fisk-svg/KongeFebars.svg" alt="Gemt fisk" class="target-img">
+                    <div class="speech-bubble">Kan du finde mig?</div>
+                    </div>
+                </div>
+
+                <div class="ocean-elements" aria-label="Havet med fisk og skaldyr">
+                    <img src="Assets/Property%201=VandMandLilla.svg" class="VandMandLilla" alt="Manet" onclick="wrongClick()">
+                    <img src="Fisk-svg/Ildhalekutling.svg" class="sea-item fish-blue" alt="Ildhalekutling" onclick="wrongClick()">
+                    <img src="Assets/Property%201=UrchinLilla.svg" class="sea-item urchin" alt="UrchinLilla" onclick="wrongClick()">
+                    <img src="Assets/Property%201=VandMandGul.svg" class="sea-item jellyfish2" alt="VandMandGul" onclick="wrongClick()">
+                    <img src="Fisk-svg/Pincetfisk.svg" class="sea-item fish-yellow" alt="Pincetfisk" onclick="wrongClick()">
+                    <img id="hidden-fish" src="Fisk-svg/KongeFebars.svg" class="sea-item hidden-fish" alt="Målfisk" onclick="foundFish()">
+                </div>
+
+                <div id="success-message" class="speech-bubble-wrapper hidden" aria-live="polite">
+                    <img src="Fisk-svg/KongeFebars.svg" class="target-img-large" alt="Fisk med succesmeddelelse">
+                    <div class="speech-bubble">Du fandt mig!</div>
+                </div>
+            </section>
 
         </div>
     </section>
