@@ -59,3 +59,189 @@ function shuffleArray(items) {
   }
   return clone;
 }
+
+setupHud();
+
+function setupHud() {
+  scoreLabel.id = 'score-label';
+  scoreLabel.textContent = `Score: ${score}`;
+  scoreLabel.className = 'score-label';
+
+  errorMessage.id = 'error-message';
+  errorMessage.textContent = 'Det ikke mig';
+  errorMessage.className = 'error-message hidden';
+
+  const gameContainer = document.getElementById('game-container');
+  if (gameContainer) {
+    gameContainer.appendChild(scoreLabel);
+    gameContainer.appendChild(errorMessage);
+  }
+}
+
+function updateScore() {
+  scoreLabel.textContent = `Score: ${score}`;
+}
+
+function showErrorMessage() {
+  errorMessage.classList.remove('hidden');
+  errorMessage.classList.add('visible');
+
+  setTimeout(() => {
+    errorMessage.classList.add('hidden');
+    errorMessage.classList.remove('visible');
+  }, 900);
+}
+
+function getSafePosition(usedPositions) {
+  const positions = [];
+
+  for (let x = 10; x <= 80; x += 8) {
+    for (let y = 12; y <= 72; y += 8) {
+      const nearCenter = Math.abs(x - 50) < 18 && Math.abs(y - 46) < 18;
+      if (nearCenter) continue;
+
+      let valid = true;
+      for (const pos of usedPositions) {
+        const distance = Math.hypot(x - pos.x, y - pos.y);
+        if (distance < 18) {
+          valid = false;
+          break;
+        }
+      }
+
+      if (valid) {
+        positions.push({ x, y });
+      }
+    }
+  }
+
+  if (!positions.length) {
+    return { x: 20, y: 20 };
+  }
+
+  return positions[Math.floor(Math.random() * positions.length)];
+}
+
+function placeItem(item, usedPositions) {
+  const position = getSafePosition(usedPositions);
+  usedPositions.push(position);
+
+  item.style.left = `${position.x}%`;
+  item.style.top = `${position.y}%`;
+  item.style.bottom = 'auto';
+  item.style.right = 'auto';
+}
+
+function chooseRandomFish() {
+  const shuffledFish = shuffleArray(fishOptions);
+  const targetFishPath = toAssetUrl(shuffledFish[0]);
+  const shuffledAssets = shuffleArray(assetLibrary);
+
+  const decoyPaths = shuffledFish
+    .slice(1)
+    .map((fish) => toAssetUrl(fish))
+    .concat(shuffledAssets.map((asset) => toAssetUrl(asset)))
+    .slice(0, seaItems.length - 1);
+
+  hiddenFish.dataset.target = targetFishPath;
+  hiddenFish.src = targetFishPath;
+  hiddenFish.alt = 'Målfisk';
+  hiddenFish.style.display = 'block';
+
+  if (targetFishImage) {
+    targetFishImage.src = targetFishPath;
+    targetFishImage.alt = 'Målfisk';
+  }
+
+  if (successFishImage) {
+    successFishImage.src = targetFishPath;
+    successFishImage.alt = 'Målfisk';
+  }
+
+  const usedPositions = [];
+
+  seaItems.forEach((item) => {
+    item.style.display = 'block';
+    item.style.visibility = 'visible';
+
+    if (item === hiddenFish) {
+      placeItem(item, usedPositions);
+      return;
+    }
+
+    const fallbackPath = toAssetUrl(assetLibrary[Math.floor(Math.random() * assetLibrary.length)]);
+    const fishPath = decoyPaths.shift() || fallbackPath;
+    item.src = fishPath;
+    placeItem(item, usedPositions);
+  });
+}
+
+// Start spillet
+function startGame() {
+  score = 0;
+  updateScore();
+
+  if (roundTimer) {
+    clearTimeout(roundTimer);
+    roundTimer = null;
+  }
+
+  startScreen.classList.remove('active');
+  playScreen.classList.add('active');
+
+  chooseRandomFish();
+
+  successMessage.classList.add('hidden');
+  targetPrompt.classList.remove('hidden');
+
+  setTimeout(() => {
+    targetPrompt.classList.add('hidden');
+  }, 2500);
+}
+
+// Vis menu igen
+function showMenu() {
+  if (roundTimer) {
+    clearTimeout(roundTimer);
+    roundTimer = null;
+  }
+
+  playScreen.classList.remove('active');
+  startScreen.classList.add('active');
+  score = 0;
+  updateScore();
+}
+
+// Når spilleren klikker på den rigtige fisk
+function foundFish() {
+  if (successFishImage) {
+    successFishImage.src = hiddenFish.src;
+  }
+
+  score += 10;
+  updateScore();
+
+  targetPrompt.classList.add('hidden');
+  successMessage.classList.remove('hidden');
+
+  if (roundTimer) {
+    clearTimeout(roundTimer);
+  }
+
+  roundTimer = setTimeout(() => {
+    successMessage.classList.add('hidden');
+    targetPrompt.classList.remove('hidden');
+    chooseRandomFish();
+
+    setTimeout(() => {
+      targetPrompt.classList.add('hidden');
+    }, 2500);
+  }, 1500);
+}
+
+// Hvis der klikkes ved siden af eller på forkert element
+function wrongClick() {
+  score = Math.max(0, score - 1);
+  updateScore();
+  showErrorMessage();
+}

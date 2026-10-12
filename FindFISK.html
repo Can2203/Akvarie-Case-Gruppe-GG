@@ -16,7 +16,7 @@
         <div class="menu-cards" role="list">
             <article class="card" role="listitem">
                 <img src="Fisk-svg/KongeFebars.svg" alt="Find fisken cover">
-                <button type="button" class="btn-play"onclick="startGame()">FIND FISKEN</button>
+                <button type="button" class="btn-play" onclick="startGame()">FIND FISKEN</button>
             </article>
 
             <article class="card" role="listitem">
@@ -28,8 +28,10 @@
                 <img src="Fisk-svg/Ildhalekutling.svg" alt="Ildhalekutling">
                 <button type="button" class="btn-play disabled"disabled>SPIL</button>
             </article>
+        </div>
+    </section>
 
-            <section id="play-screen" class="screen" aria-label="Spilsscene">
+    <section id="play-screen" class="screen" aria-label="Spilsscene">
                 <div id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
                     <div class="bubble-circle">
                     <img src="Fisk-svg/KongeFebars.svg" alt="Gemt fisk" class="target-img">
@@ -50,11 +52,14 @@
                     <img src="Fisk-svg/KongeFebars.svg" class="target-img-large" alt="Fisk med succesmeddelelse">
                     <div class="speech-bubble">Du fandt mig!</div>
                 </div>
-            </section>
-
-        </div>
     </section>
 
+    <nav id="bottom-nav" aria-label="Spilnavigation">
+        <button type="button" class="nav-btn home-btn" onclick="showMenu()" aria-label="Tilbage til menu"></button>
+        <button type="button" class="nav-btn play-btn" onclick="startGame()" aria-label="Start spillet igen"></button>
+        <button type="button" class="nav-btn book-btn" aria-label="Bog"></button>
+    </nav>
+    </main>
 
    
 
