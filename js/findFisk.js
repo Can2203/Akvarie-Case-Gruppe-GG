@@ -1,0 +1,31 @@
+const fishOptions = [
+  'Fisk-svg/Antais.svg',
+  'Fisk-svg/Hugofisk.svg',
+  'Fisk-svg/Ildhalekutling.svg',
+  'Fisk-svg/KongeFebars.svg',
+  'Fisk-svg/Nemo.svg',
+  'Fisk-svg/Palet kirurg.svg',
+  'Fisk-svg/Pincetfisk.svg',
+  'Fisk-svg/Røgfarvetkirurg.svg'
+];
+
+const assetLibrary = [
+  'Assets/Property 1=Barnacle1.svg',
+  'Assets/Property 1=Barnacle2.svg',
+  'Assets/Property 1=DetailStenLille.svg',
+  'Assets/Property 1=DetailStenStor.svg',
+  'Assets/Property 1=Musling lilla.svg',
+  'Assets/Property 1=Musling pink.svg',
+  'Assets/Property 1=Sten1.svg',
+  'Assets/Property 1=Sten2.svg',
+  'Assets/Property 1=tang1.svg',
+  'Assets/Property 1=tang2.svg',
+  'Assets/Property 1=tang3.svg',
+  'Assets/Property 1=TangBrunSten.svg',
+  'Assets/Property 1=TangGrønSten.svg',
+  'Assets/Property 1=UrchinBrun.svg',
+  'Assets/Property 1=UrchinLilla.svg',
+  'Assets/Property 1=VandMandGul.svg',
+  'Assets/Property 1=VandMandLilla.svg',
+  'Assets/Søstjerne.svg'
+];
