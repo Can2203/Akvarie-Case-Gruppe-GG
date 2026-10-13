@@ -19,9 +19,9 @@ const fishOptions = [
   'Fisk-svg/Ildhalekutling.svg',
   'Fisk-svg/KongeFebars.svg',
   'Fisk-svg/Nemo.svg',
-  'Fisk-svg/Palet kirurg.svg',
+  'Fisk-svg/Paletkirurg.svg',
   'Fisk-svg/Pincetfisk.svg',
-  'Fisk-svg/Røgfarvetkirurg.svg'
+  'Fisk-svg/Rogfarvetkirurg.svg'
 ];
 
 const seaItems = Array.from(document.querySelectorAll('.sea-item'));
