@@ -25,6 +25,7 @@ body{
     position:relative;
     top: 250px;
     left: 10px;
+    border:none;
 }
 
 .Rogfarvetkirurgfisk img{
@@ -39,6 +40,7 @@ body{
     position:relative;
     bottom: 150px;
     left: -170px;
+    border:none;
 }
 
 .Ildhalekutlingfisk img{
@@ -53,6 +55,7 @@ body{
     bottom: -100px;
     left: -70px;
     transform: scaleX(-1);
+    border:none;
 }
 
 .Nemo img{
@@ -68,6 +71,7 @@ body{
     bottom: 150px;
     left:100px;
     transform: scaleX(-1);
+    border:none;
 }
 
 .Paletkirurgfisk img{
@@ -82,6 +86,7 @@ body{
     position:relative;
     bottom: -150px;
     left: -125px;
+    border:none;
 }
 
 .KongeFebars img{
@@ -96,6 +101,7 @@ body{
     bottom: 50px;
     left:1100px;
     transform: scaleX(-1);
+    border:none;
 }
 
 .Pincetfisk img{
@@ -104,11 +110,9 @@ body{
 
 
 
-
-
-@keyframes moveRogfarvetkirurgfisk {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100vw); }
+.boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
+    border:none;
+    background:transparent;
 }
 
 
