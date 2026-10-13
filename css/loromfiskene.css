@@ -9,10 +9,61 @@ body{
         overflow: scroll;
 }
 
-.Rogfarvetkirurgfisk{
-    width:200px;
-    height:200px;
+.Rogfarvetkirurgfisk img{
+    width: 370px;
+    transform: scaleX(-1);
+    position:relative;
+    top: 400px;
+    left: 30px;
 }
+
+.Ildhalekutlingfisk img{
+    width: 200px;
+    height:auto;
+    transform: scaleX(-1);
+    position:relative;
+    bottom: 200px;
+    left: 150px;
+}
+
+.Nemo img{
+    width:150px;
+    position:relative;
+    bottom: 150px;
+    left: 500px;
+    transform: scaleX(-1);
+}
+
+.Paletkirurgfisk img{
+    width: 200px;
+    position:relative;
+    bottom: 250px;
+    left:800px;
+    transform: scaleX(-1);
+}
+
+.KongeFebars img{
+    width: 150px;
+    position:relative;
+    bottom: 100px;
+    left: 800px;
+}
+
+.Pincetfisk img{
+    width: 300px;
+    position:relative;
+    bottom: 400px;
+    left:1100px;
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
 
 
 
