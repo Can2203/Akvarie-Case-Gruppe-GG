@@ -24,27 +24,6 @@ const fishOptions = [
   'Fisk-svg/Røgfarvetkirurg.svg'
 ];
 
-const assetLibrary = [
-  'Assets/Property 1=Barnacle1.svg',
-  'Assets/Property 1=Barnacle2.svg',
-  'Assets/Property 1=DetailStenLille.svg',
-  'Assets/Property 1=DetailStenStor.svg',
-  'Assets/Property 1=Musling lilla.svg',
-  'Assets/Property 1=Musling pink.svg',
-  'Assets/Property 1=Sten1.svg',
-  'Assets/Property 1=Sten2.svg',
-  'Assets/Property 1=tang1.svg',
-  'Assets/Property 1=tang2.svg',
-  'Assets/Property 1=tang3.svg',
-  'Assets/Property 1=TangBrunSten.svg',
-  'Assets/Property 1=TangGrønSten.svg',
-  'Assets/Property 1=UrchinBrun.svg',
-  'Assets/Property 1=UrchinLilla.svg',
-  'Assets/Property 1=VandMandGul.svg',
-  'Assets/Property 1=VandMandLilla.svg',
-  'Assets/Søstjerne.svg'
-];
-
 const seaItems = Array.from(document.querySelectorAll('.sea-item'));
 
 function toAssetUrl(path) {
@@ -135,12 +114,10 @@ function placeItem(item, usedPositions) {
 function chooseRandomFish() {
   const shuffledFish = shuffleArray(fishOptions);
   const targetFishPath = toAssetUrl(shuffledFish[0]);
-  const shuffledAssets = shuffleArray(assetLibrary);
 
   const decoyPaths = shuffledFish
     .slice(1)
     .map((fish) => toAssetUrl(fish))
-    .concat(shuffledAssets.map((asset) => toAssetUrl(asset)))
     .slice(0, seaItems.length - 1);
 
   hiddenFish.dataset.target = targetFishPath;
@@ -169,7 +146,7 @@ function chooseRandomFish() {
       return;
     }
 
-    const fallbackPath = toAssetUrl(assetLibrary[Math.floor(Math.random() * assetLibrary.length)]);
+    const fallbackPath = toAssetUrl(fishOptions[Math.floor(Math.random() * fishOptions.length)]);
     const fishPath = decoyPaths.shift() || fallbackPath;
     item.src = fishPath;
     placeItem(item, usedPositions);
