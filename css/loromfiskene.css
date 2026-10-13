@@ -1,0 +1,21 @@
+
+
+body{
+    background-image: url("../images/Baggrund.jpg");
+        background-size: cover;
+        height:100vh;
+        margin: 0;
+        background-position: bottom;
+        overflow: scroll;
+}
+
+.Rogfarvetkirurgfisk{
+    width:200px;
+    height:200px;
+}
+
+
+
+
+
+
