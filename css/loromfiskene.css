@@ -9,56 +9,111 @@ body{
         overflow: scroll;
 }
 
-.Rogfarvetkirurgfisk img{
-    width: 370px;
+
+
+.overskriftlof{
+    font-size: 60px;
+    text-align: center;
+    color: #062344;
+    position: relative;
+}
+
+
+.Rogfarvetkirurgfisk{
+    background: transparent;
     transform: scaleX(-1);
     position:relative;
-    top: 400px;
-    left: 30px;
+    top: 250px;
+    left: 10px;
+    border:none;
+}
+
+.Rogfarvetkirurgfisk img{
+    width: 370px;
+}
+
+
+
+.Ildhalekutlingfisk{
+    background: transparent;
+    transform: scaleX(-1);
+    position:relative;
+    bottom: 150px;
+    left: -170px;
+    border:none;
 }
 
 .Ildhalekutlingfisk img{
     width: 200px;
-    height:auto;
-    transform: scaleX(-1);
+}
+
+
+
+.Nemo{
+    background: transparent;
     position:relative;
-    bottom: 200px;
-    left: 150px;
+    bottom: -100px;
+    left: -70px;
+    transform: scaleX(-1);
+    border:none;
 }
 
 .Nemo img{
-    width:150px;
+    width: 150px;
+}
+
+
+
+
+.Paletkirurgfisk{
+    background: transparent;
     position:relative;
     bottom: 150px;
-    left: 500px;
+    left:100px;
     transform: scaleX(-1);
+    border:none;
 }
 
 .Paletkirurgfisk img{
     width: 200px;
+}
+
+
+
+
+.KongeFebars{
+    background: transparent;
     position:relative;
-    bottom: 250px;
-    left:800px;
-    transform: scaleX(-1);
+    bottom: -150px;
+    left: -125px;
+    border:none;
 }
 
 .KongeFebars img{
     width: 150px;
+}
+
+
+
+.Pincetfisk{
+    background: transparent;
     position:relative;
-    bottom: 100px;
-    left: 800px;
+    bottom: 50px;
+    left:1100px;
+    transform: scaleX(-1);
+    border:none;
 }
 
 .Pincetfisk img{
     width: 300px;
-    position:relative;
-    bottom: 400px;
-    left:1100px;
-    transform: scaleX(-1);
 }
 
 
 
+.boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
+    border:none;
+    background:transparent;
+}
 
 
 
