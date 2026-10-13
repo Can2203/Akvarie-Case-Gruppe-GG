@@ -1,0 +1,14 @@
+
+
+
+body{
+    background-image: url("../images/Baggrund.jpg");
+        background-size: cover;
+        height:100vh;
+        margin: 0;
+        background-position: bottom;
+        scroll: overflow;
+}
+
+
+
