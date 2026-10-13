@@ -1,3 +1,267 @@
-*{
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/Baggrund.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#game-container * { 
+  max-width: 100%;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#start-screen {
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-cards {
+  display: flex;
+  gap: clamp(16px, 2vw, 32px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: clamp(12px, 1.7vw, 18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  max-width: 220px;
+}
+
+.card img {
+  width: clamp(130px, 14vw, 200px);
+  height: clamp(100px, 11vw, 160px);
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.btn-play {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: clamp(12px, 1.3vw, 18px) clamp(22px, 2.5vw, 34px);
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  cursor: pointer;
+  min-width: 170px;
+}
+
+.btn-play.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.speech-bubble-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bubble-circle {
+  position: relative;
+  width: clamp(220px, 22vw, 280px);
+  height: clamp(220px, 22vw, 280px);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+.target-img {
+  width: clamp(120px, 13vw, 170px);
+}
+
+.speech-bubble {
+  position: absolute;
+  right: -90px;
+  top: 20px;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: clamp(13px, 1.2vw, 17px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 15px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid white;
+}
+
+.ocean-elements {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sea-item {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  visibility: visible;
+  opacity: 1;
+}
+
+.sea-item:hover {
+  transform: scale(1.08);
+}
+
+.jellyfish1 { top: 60px; left: 80px; width: clamp(80px, 7vw, 110px); }
+.fish-blue { top: 150px; left: 31%; width: clamp(100px, 10vw, 150px); }
+.urchin { top: 80px; right: 19%; width: clamp(90px, 8vw, 120px); }
+.jellyfish2 { top: 150px; right: 90px; width: clamp(80px, 7vw, 110px); }
+.fish-yellow { bottom: 120px; left: 52%; width: clamp(90px, 9vw, 130px); }
+
+.hidden-fish { 
+  bottom: 90px; 
+  left: 18%; 
+  width: clamp(75px, 8vw, 120px); 
+  opacity: 0.85;
+}
+
+#success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: min(42vw, 420px);
+  max-width: calc(100vw - 40px);
+  padding: 20px;
+  overflow: hidden;
+}
+
+#success-message .speech-bubble {
+  position: relative;
+  right: auto;
+  top: auto;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+#success-message .speech-bubble::before {
+  display: none;
+}
+
+.target-img-large {
+  width: clamp(150px, 18vw, 220px);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.score-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.8);
+  color: #0a3d62;
+  font-weight: bold;
+  font-size: clamp(15px, 1.3vw, 22px);
+  padding: 10px 16px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.error-message {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+  z-index: 35;
+  background: rgba(255, 87, 34, 0.9);
+  color: white;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+#bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(50px, 12vw, 150px);
+  z-index: 20;
+}
+
+.nav-btn {
+  width: clamp(60px, 5vw, 82px);
+  height: clamp(60px, 5vw, 82px);
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.home-btn { background-image: url('../images/LOGO.png'); }
+.play-btn { background-image: url('../Fisk-svg/Konge%20Febars.svg'); background-color: #ff5722; width: 60px; height: 60px; }
+.book-btn { background-image: url('../Assets/Søstjerne.svg'); }
