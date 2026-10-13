@@ -1,3 +1,9 @@
+:root{
+  --navKnap1: #2CAA9A;
+  --navKnap2: #E94C06;
+  --navKnap3: #FA9898;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -262,6 +268,8 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.home-btn { background-image: url('../images/LOGO.png'); }
-.play-btn { background-image: url('../Fisk-svg/Konge%20Febars.svg'); background-color: #ff5722; width: 60px; height: 60px; }
-.book-btn { background-image: url('../Assets/Søstjerne.svg'); }
+.home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 90px; height: 90px; }
+.play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 90px; height: 90px; }
+.book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 90px; height: 90px; }
+
+
