@@ -14,22 +14,23 @@ body{
 .overskriftlof{
     font-size: 60px;
     text-align: center;
-    color: #062344;
+    color: #ffffff;
     position: relative;
+    font-family:'Barlow', sans-serif;
 }
 
 
 .Rogfarvetkirurgfisk{
     background: transparent;
-    transform: scaleX(-1);
     position:relative;
     top: 200px;
-    left: 10px;
+    left:10px;
     border:none;
 }
 
 .Rogfarvetkirurgfisk img{
     width: 370px;
+    
 }
 
 
@@ -64,18 +65,17 @@ body{
 
 
 
-
 .Paletkirurgfisk{
     background: transparent;
     position:relative;
-    bottom: 150px;
-    left:100px;
-    transform: scaleX(-1);
+    bottom: 100px;
+    left: 25px;
     border:none;
 }
 
 .Paletkirurgfisk img{
     width: 200px;
+    transform: scaleX(-1);
 }
 
 
@@ -163,6 +163,25 @@ body{
 }
 
 
+
+.nav-knap{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position:absolute;
+    bottom: 50px;
+    width: 100%;
+    z-index: 2;
+}
 
 
 
