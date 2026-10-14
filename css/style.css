@@ -27,6 +27,11 @@ body{
     align-items: center;
 }
 
+.play svg{
+    width: 15vw;
+    height: auto;
+    margin-top: 100px;
+}
 .allefisk {
     position: absolute;
     inset: 0;
