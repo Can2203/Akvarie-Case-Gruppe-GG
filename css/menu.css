@@ -8,8 +8,8 @@ body{
 }
 
 .nav-knap{
-    width: 200px;
-    height: 200px;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body{
 nav{
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 10vw;
     position:absolute;
     bottom: 50px;
     width: 100%;
@@ -142,3 +142,9 @@ nav{
     left: 90%;
     width: 85px;
 }     
+
+.nav-knap img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
