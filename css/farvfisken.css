@@ -1,0 +1,44 @@
+body{
+    background-image: url("../images/Baggrund.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.damefisk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+.pensel {
+    position: absolute;
+    bottom: -55px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.vskift {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.hskift {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
