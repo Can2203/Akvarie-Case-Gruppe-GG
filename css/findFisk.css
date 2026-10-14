@@ -70,6 +70,7 @@ body {
   align-items: center;
   backdrop-filter: blur(5px);
   max-width: 220px;
+  margin-bottom: 100px;
 }
 
 .card img {
@@ -270,8 +271,8 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 90px; height: 90px; }
-.play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 90px; height: 90px; }
-.book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 90px; height: 90px; }
+.home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 200px; height: 200px; }
+.play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 200px; height: 200px; }
+.book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 200px; height: 200px; }
 
 
