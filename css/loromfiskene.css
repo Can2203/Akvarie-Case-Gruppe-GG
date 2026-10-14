@@ -21,11 +21,11 @@ body{
 
 .Rogfarvetkirurgfisk{
     background: transparent;
-    transform: scaleX(-1);
     position:relative;
     top: 200px;
-    left: 10px;
+    left:10px;
     border:none;
+    transform: scaleX(-1);
 }
 
 .Rogfarvetkirurgfisk img{
@@ -64,18 +64,17 @@ body{
 
 
 
-
 .Paletkirurgfisk{
     background: transparent;
     position:relative;
-    bottom: 150px;
-    left:100px;
-    transform: scaleX(-1);
+    bottom: 100px;
+    left: 25px;
     border:none;
 }
 
 .Paletkirurgfisk img{
     width: 200px;
+    transform: scaleX(-1);
 }
 
 
