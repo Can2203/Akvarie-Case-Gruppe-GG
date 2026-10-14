@@ -6,7 +6,7 @@ body{
         height:100vh;
         margin: 0;
         background-position: bottom;
-        overflow: scroll;
+        overflow: hidden;
 }
 
 
@@ -135,15 +135,24 @@ body{
 }
 
 
-
-
-
-
+/*BOBLERNE*/
 
 .boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
     border:none;
     background:transparent;
 }
+
+
+.boble1{
+    position:absolute;
+    top:20px;
+}
+
+
+
+
+
+
 
 
 
