@@ -12,7 +12,18 @@ function hideUnhide(id) {
     } else {
         p1.style.display = "none";
     }
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
