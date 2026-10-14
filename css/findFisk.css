@@ -15,7 +15,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #e0e0e0;
-  font-family: Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
   overflow: hidden;
 }
 
@@ -50,8 +50,19 @@ body {
 }
 
 #start-screen {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.titel {
+  color: var(--white);
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: clamp(16px, 2vw, 28px);
+  text-align: center;
+  margin-bottom: 20;
+  font-family: 'Barlow', sans-serif;
+
 }
 
 .menu-cards {
@@ -64,18 +75,18 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
-  padding: clamp(18px, 2vw, 24px);
+  padding: clamp(26px, 3vw, 36px);
   display: flex;
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(5px);
-  max-width: 220px;
+  max-width: 340px;
   margin-bottom: 100px;
 }
 
 .card img {
-  width: clamp(130px, 14vw, 200px);
-  height: clamp(100px, 11vw, 160px);
+  width: clamp(220px, 22vw, 290px);
+  height: clamp(170px, 17vw, 220px);
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
@@ -86,12 +97,12 @@ body {
   background-color: var(--navKnap2);
   color: var(--white);
   border: none;
-  padding: clamp(12px, 1.3vw, 18px) clamp(22px, 2.5vw, 34px);
+  padding: clamp(14px, 1.6vw, 22px) clamp(28px, 3vw, 42px);
   border-radius: 20px;
   font-weight: bold;
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.7rem);
   cursor: pointer;
-  min-width: 170px;
+  min-width: 200px;
 }
 
 .btn-play.disabled {
@@ -263,7 +274,7 @@ body {
   width: clamp(60px, 5vw, 82px);
   height: clamp(60px, 5vw, 82px);
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.6);
+  border: 5px solid var(--white);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -271,8 +282,6 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 200px; height: 200px; }
-.play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 200px; height: 200px; }
-.book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 200px; height: 200px; }
-
-
+.home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 140px; height: 140px; }
+.play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 140px; height: 140px; }
+.book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 140px; height: 140px; }
