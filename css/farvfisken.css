@@ -53,8 +53,8 @@ body{
 
 .palette{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
+    bottom:20px;
+    right: 0px;
+    width: 250px;
     height: auto;
 }
