@@ -14,8 +14,9 @@ body{
 .overskriftlof{
     font-size: 60px;
     text-align: center;
-    color: #062344;
+    color: #ffffff;
     position: relative;
+    font-family:'Barlow', sans-serif;
 }
 
 
@@ -25,11 +26,11 @@ body{
     top: 200px;
     left:10px;
     border:none;
-    transform: scaleX(-1);
 }
 
 .Rogfarvetkirurgfisk img{
     width: 370px;
+    
 }
 
 
@@ -162,6 +163,25 @@ body{
 }
 
 
+
+.nav-knap{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    position:absolute;
+    bottom: 50px;
+    width: 100%;
+    z-index: 2;
+}
 
 
 
