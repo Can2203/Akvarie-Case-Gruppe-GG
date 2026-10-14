@@ -37,15 +37,15 @@ body{
 
 .Ildhalekutlingfisk{
     background: transparent;
-    transform: scaleX(-1);
     position:relative;
-    bottom: 150px;
-    left: -170px;
+    bottom: 200px;
+    left: -250px;
     border:none;
 }
 
 .Ildhalekutlingfisk img{
     width: 200px;
+    transform: scaleX(-1);
 }
 
 
@@ -53,14 +53,14 @@ body{
 .Nemo{
     background: transparent;
     position:relative;
-    bottom: -100px;
+    bottom: 50px;
     left: -70px;
-    transform: scaleX(-1);
     border:none;
 }
 
 .Nemo img{
     width: 150px;
+    transform: scaleX(-1);
 }
 
 
@@ -68,30 +68,28 @@ body{
 .Paletkirurgfisk{
     background: transparent;
     position:relative;
-    bottom: 100px;
-    left: 25px;
+    bottom: 80px;
+    left: -50px;
     border:none;
 }
 
 .Paletkirurgfisk img{
-    width: 200px;
+    width: 300px;
     transform: scaleX(-1);
 }
-
-
 
 
 .Hugofisk{
     background: transparent;
     position:relative;
     bottom: 150px;
-    left:100px;
-    transform: scaleX(-1);
+    left:50px;
     border:none;
 }
 
 .Hugofisk img{
-    width: 200px;
+    width: 145px;
+    transform: scaleX(-1);
 }
 
 
@@ -114,28 +112,26 @@ body{
 .Pincetfisk{
     background: transparent;
     position:relative;
-    bottom: -100px;
-    left:-10px;
-    transform: scaleX(-1);
-
+    bottom: 40px;
+    left:500px;
+    border:none;
 }
 
 .Pincetfisk img{
     width: 300px;
+    transform: scaleX(-1);
 }
 
 .Antias{
     background: transparent;
     position:relative;
-    bottom: -100px;
-    left:-10px;
-    transform: scaleX(-1);
+    bottom: 550px;
+    left:1250px;
     border:none;
-    width: 300px;
 }
 
 .Antias img{
-    width: 300px;
+    width: 150px;
 }
 
 
@@ -161,6 +157,17 @@ body{
   gap: clamp(50px, 12vw, 150px);
   z-index: 20;
 }
+
+.paragraph1{
+    display:flex;
+}
+
+
+
+
+
+
+
 
 
 
