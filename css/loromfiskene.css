@@ -23,7 +23,7 @@ body{
     background: transparent;
     transform: scaleX(-1);
     position:relative;
-    top: 250px;
+    top: 200px;
     left: 10px;
     border:none;
 }
@@ -81,6 +81,22 @@ body{
 
 
 
+.Hugofisk{
+    background: transparent;
+    position:relative;
+    bottom: 150px;
+    left:100px;
+    transform: scaleX(-1);
+    border:none;
+}
+
+.Hugofisk img{
+    width: 200px;
+}
+
+
+
+
 .KongeFebars{
     background: transparent;
     position:relative;
@@ -98,15 +114,33 @@ body{
 .Pincetfisk{
     background: transparent;
     position:relative;
-    bottom: 50px;
-    left:1100px;
+    bottom: -100px;
+    left:-10px;
     transform: scaleX(-1);
-    border:none;
+
 }
 
 .Pincetfisk img{
     width: 300px;
 }
+
+.Antias{
+    background: transparent;
+    position:relative;
+    bottom: -100px;
+    left:-10px;
+    transform: scaleX(-1);
+    border:none;
+    width: 300px;
+}
+
+.Antias img{
+    width: 300px;
+}
+
+
+
+
 
 
 
@@ -117,6 +151,16 @@ body{
 
 
 
+#bottom-nav{
+    position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(50px, 12vw, 150px);
+  z-index: 20;
+}
 
 
 
