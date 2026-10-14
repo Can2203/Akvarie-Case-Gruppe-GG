@@ -15,7 +15,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #e0e0e0;
-  font-family: Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
   overflow: hidden;
 }
 
@@ -50,8 +50,19 @@ body {
 }
 
 #start-screen {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.titel {
+  color: var(--white);
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: clamp(16px, 2vw, 28px);
+  text-align: center;
+  margin-bottom: 20;
+  font-family: 'Barlow', sans-serif;
+
 }
 
 .menu-cards {
@@ -274,4 +285,3 @@ body {
 .home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 140px; height: 140px; }
 .play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 140px; height: 140px; }
 .book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 140px; height: 140px; }
-
