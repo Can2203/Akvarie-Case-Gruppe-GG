@@ -42,3 +42,19 @@ body{
     width: 100px;
     height: auto;
 }
+
+.tang1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: auto;
+}
+
+.palette{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+}
