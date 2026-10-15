@@ -135,21 +135,79 @@ body{
 }
 
 
+
+
+
 /*BOBLERNE*/
+
+.boble img{
+    width: 200px;
+}
 
 .boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
     border:none;
     background:transparent;
 }
 
-
-.boble1{
-    position:absolute;
-    top:20px;
+.paragraph1{
+    display:flex;
 }
 
 
 
+
+
+.boble1{
+    position:absolute;
+    top:220px;
+    left:10px;
+}
+
+
+.boble2{
+    position:absolute;
+    top:370px;
+    left:140px;
+}
+
+.boble3{
+    position:absolute;
+    top:470px;
+    left:330px;
+}
+
+.boble4{
+    position:absolute;
+    top:550px;
+    left:520px;
+}
+
+.boble5{
+    position:absolute;
+    top:550px;
+    left:750px;
+}
+
+
+.boble6{
+    position:absolute;
+    top:470px;
+    left:940px;
+}
+
+
+.boble7{
+    position:absolute;
+    top:370px;
+    left:1130px;
+}
+
+
+.boble8{
+    position:absolute;
+    top:220px;
+    left:1260px;
+}
 
 
 
@@ -166,18 +224,6 @@ body{
   gap: clamp(50px, 12vw, 150px);
   z-index: 20;
 }
-
-.paragraph1{
-    display:flex;
-}
-
-
-
-
-
-
-
-
 
 
 .nav-knap{
