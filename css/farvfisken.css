@@ -77,23 +77,23 @@ body{
 
 .blåbobbel {
     position: absolute;
-    top: 90px;
-    right: 260px;
+    top: 100px;
+    right: 200px;
     width: 100px;
     height: auto;
 }
 
 .lillabobbel {
     position: absolute;
-    bottom: 35px;
-    left: 35px;
+    top: 150px;
+    right: 300px;
     width: 100px;
     height: auto;
 }
 
 .grønbobbel {
     position: absolute;
-    bottom: 40px;
+    top: 40px;
     right: 40px;
     width: 100px;
     height: auto;
@@ -101,7 +101,7 @@ body{
 
 .orangebobbel {
     position: absolute;
-    bottom: 50px;
+    top: 50px;
     right: 50px;
     width: 100px;
     height: auto;
@@ -110,7 +110,7 @@ body{
 
 .rødbobbel {
     position: absolute;
-    bottom: 55px;
+    top: 55px;
     right: 55px;
     width: 100px;
     height: auto;
@@ -118,7 +118,7 @@ body{
 
 .gulbobbel {
     position: absolute;
-    bottom: 60px;
+    top: 60px;
     right: 60px;
     width: 100px;
     height: auto;
