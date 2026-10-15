@@ -11,8 +11,9 @@ function hideUnhide(id) {
         p1.style.display = "flex";
     } else {
         p1.style.display = "none";
+        p1.style.color = "transparent";
     }
-    
+
 }
 
 
