@@ -1,6 +1,6 @@
 
 
-console.log(hej);
+console.log("hej");
 
 
 function hideUnhide(id) {
