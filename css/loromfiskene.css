@@ -155,13 +155,25 @@ body{
 
 
 
-
-
 .boble1{
     position:absolute;
     top:220px;
     left:10px;
 }
+
+.storboble1{
+    position: absolute;
+    top: 190px;
+    width: 290px;
+    left:3px;
+}
+
+.storboble1tekst{
+    color:#ffffff;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 .boble2{
