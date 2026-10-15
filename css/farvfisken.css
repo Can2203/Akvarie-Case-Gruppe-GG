@@ -47,14 +47,22 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
 .palette{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
+    bottom:20px;
+    right: 0px;
+    width: 250px;
     height: auto;
 }
+
+    .tang2{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        width: 10px;
+        height: 30px;
+}  
