@@ -67,8 +67,8 @@ body{
 .Paletkirurgfisk{
     background: transparent;
     position:relative;
-    bottom: 80px;
-    left: -50px;
+    bottom: 333px;
+    left: 1045px;
     border:none;
 }
 
@@ -94,12 +94,11 @@ body{
 
 
 
-
 .KongeFebars{
     background: transparent;
     position:relative;
     bottom: -150px;
-    left: -125px;
+    left: -380px;
     border:none;
 }
 
@@ -114,7 +113,7 @@ body{
     background: transparent;
     position:relative;
     bottom: 40px;
-    left:500px;
+    left:343px;
     border:none;
 }
 
@@ -128,7 +127,7 @@ body{
     background: transparent;
     position:relative;
     bottom: 550px;
-    left:1250px;
+    left:935px;
     border:none;
 }
 
