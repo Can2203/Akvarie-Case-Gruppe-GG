@@ -230,15 +230,20 @@ body{
 }
 
 
+
+/*-----------------TILBAGEKNAP-----------------*/
+
 .play{
     transform:rotate(180deg);
     position: absolute;
     width: 1px;
     top:580px;
-    left:800px;
+    left:775px;
 }
 
-
+.svg{
+    width: 90px;
+}
 
 
 
