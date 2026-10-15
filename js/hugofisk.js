@@ -17,7 +17,18 @@ function hideUnhide(id) {
 
 }
 
+function hideUnhide(id) {
+    const p2 = document.getElementById(id);
 
+    if (p2.style.display == "none") {
+        p2.style.display = "block";
+        p2.style.display = "flex";
+    } else {
+        p2.style.display = "none";
+        p2.style.color = "transparent";
+    }
+
+}
 
 
 
