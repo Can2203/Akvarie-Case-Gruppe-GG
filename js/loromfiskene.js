@@ -1,6 +1,6 @@
 
 
-console.log(hej);
+console.log("hej");
 
 
 function hideUnhide(id) {
@@ -12,7 +12,18 @@ function hideUnhide(id) {
     } else {
         p1.style.display = "none";
     }
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
