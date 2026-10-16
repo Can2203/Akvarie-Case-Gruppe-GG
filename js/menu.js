@@ -10,15 +10,22 @@ const boble = document.querySelectorAll(".boble");
 const velkomstLyd = document.querySelector("#sprutte-velkomst");
 const afspilKnap = document.querySelector("#afspil-velkomst");
 
+const taleTekst=document.querySelector("#velkomst-taleboble");
+const velkomstTekst=taleTekst.textContent;
+
 function afspilVelkomst() {
+        taleTekst.textContent=velkomstTekst;
     velkomstLyd.play().catch(function(error) {
         console.error("Kunne ikke afspille Spruttes velkomstlyd.", error);
     });
 }
 
+// Viktor
 afspilKnap.addEventListener("click", afspilVelkomst);
 afspilVelkomst();
 
+
+// Frederikke
 sprutte.animate(
     [
         { transform: "translateY(0px)" },   
@@ -58,3 +65,14 @@ boble.forEach(function(boble, i){
         }
     );
 });
+
+let paamindelse;
+velkomstLyd.addEventListener("ended",function(){
+    clearTimeout(paamindelse);
+
+    paamindelse=setTimeout(function(){
+        taleTekst.textContent="Er du der stadig? Jeg har så mange fisk, jeg gerne vil vise dig! Tryk på bogen, eller prøv et spil ved lynet";
+        new Audio("Lyd/sprutteRepeat.mp3").play();
+    },7000);
+});
+
