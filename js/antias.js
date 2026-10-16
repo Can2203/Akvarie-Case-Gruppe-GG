@@ -14,10 +14,15 @@ function hideUnhide(id) {
 
     } else {
         p1.style.display = "none";
-        p1.style.color = "transparent";
     }
 
+
 }
+
+
+
+
+
 
 function hideUnhide(id) {
     const p2 = document.getElementById(id);
