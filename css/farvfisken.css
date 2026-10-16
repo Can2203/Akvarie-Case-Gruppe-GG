@@ -1,1 +1,13 @@
+/* Maiken */
 
+
+body{
+    background-image: url("../images/Baggrund.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: bottom;
+    overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+    position:absolute;
+}
