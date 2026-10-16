@@ -72,7 +72,7 @@ body{
 .tyrkisbobbel {
     position: absolute;
     top: 175px;
-    left: 180px;
+    left: 175px;
     width: 150px;
     height: auto;
 }
@@ -80,7 +80,7 @@ body{
 .blåbobbel {
     position: absolute;
     top: 175px;
-    right: 180px;
+    right: 200px;
     width: 150px;
     height: auto;
 }
@@ -121,7 +121,7 @@ body{
 .gulbobbel {
     position: absolute;
     top: 40px;
-    right: 700px;
+    right: 675px;
     width: 150px;
     height: auto;
 }
