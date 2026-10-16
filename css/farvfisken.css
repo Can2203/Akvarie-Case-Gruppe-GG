@@ -6,6 +6,7 @@ body{
     background-position: bottom;
     overflow: hidden;
     font-family: 'Barlow', sans-serif;
+    position:absolute;
 
 }
 
