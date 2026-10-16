@@ -1,3 +1,5 @@
+// Victor
+
 // Hent elementer
 const startScreen = document.getElementById('start-screen');
 const playScreen = document.getElementById('play-screen');

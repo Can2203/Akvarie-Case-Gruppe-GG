@@ -1,4 +1,4 @@
-
+/* Frederikke */
 
 body{
     background-image: url("../images/Baggrund.jpg");
@@ -34,6 +34,8 @@ body{
     height: auto;
     margin-top: 100px;
 }
+
+/* Victor */
 .allefisk {
     position: absolute;
     inset: 0;
@@ -64,6 +66,8 @@ body{
     to { transform: translateX(120vw); }
 }
 
+
+/* Frederikke */
 .titel{
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
