@@ -59,10 +59,67 @@ body{
     height: auto;
 }
 
-    .tang2{
+.tang2{
         position: absolute;
         bottom: 20px;
-        right: 0;
-        width: 10px;
-        height: 30px;
+        left: 40px;
+        width: 200px;
+        height: 200px;
 }  
+
+.tyrkisbobbel {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    width: 100px;
+    height: auto;
+}
+
+.blåbobbel {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: 100px;
+    height: auto;
+}
+
+.lillabobbel {
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    width: 100px;
+    height: auto;
+}
+
+.grønbobbel {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 100px;
+    height: auto;
+} 
+
+.orangebobbel {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: auto;
+}
+
+
+.rødbobbel {
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    width: 100px;
+    height: auto;
+}
+
+.gulbobbel {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 100px;
+    height: auto;
+}
