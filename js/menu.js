@@ -5,6 +5,18 @@ const ben = document.querySelectorAll(".ben");
 
 const boble = document.querySelectorAll(".boble");
 
+const velkomstLyd = document.querySelector("#sprutte-velkomst");
+const afspilKnap = document.querySelector("#afspil-velkomst");
+
+function afspilVelkomst() {
+    velkomstLyd.play().catch(function(error) {
+        console.error("Kunne ikke afspille Spruttes velkomstlyd.", error);
+    });
+}
+
+afspilKnap.addEventListener("click", afspilVelkomst);
+afspilVelkomst();
+
 sprutte.animate(
     [
         { transform: "translateY(0px)" },   
