@@ -1,3 +1,5 @@
+// Frederikke
+
 const sprutte = document.querySelector(".sprutte");
 console.log(sprutte);
 
