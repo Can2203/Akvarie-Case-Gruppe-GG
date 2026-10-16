@@ -3,7 +3,7 @@
 body{
     background-image: url("../images/Baggrund.jpg");
         background-size: cover;
-        height:100vh;
+        min-height:100vh;
         margin: 0;
         background-position: bottom;
         overflow: hidden;
@@ -17,7 +17,9 @@ body{
     color: #ffffff;
     position: relative;
     font-family:'Barlow', sans-serif;
-    
+    margin-top:0;
+    padding-top:50px;
+    text-shadow: 0 4px 4px #1a3058;
 }
 
 
@@ -33,7 +35,6 @@ body{
     width: 370px;
     
 }
-
 
 
 
