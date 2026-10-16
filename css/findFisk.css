@@ -26,6 +26,9 @@ body {
   background: url('../images/Baggrund.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  font-family: 'Barlow', sans-serif;
+
+
 }
 
 #game-container * { 
@@ -61,8 +64,13 @@ body {
   margin-bottom: clamp(16px, 2vw, 28px);
   text-align: center;
   margin-bottom: 20;
-  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
 
+}
+
+.titel h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold ;
 }
 
 .menu-cards {
@@ -70,6 +78,8 @@ body {
   gap: clamp(16px, 2vw, 32px);
   flex-wrap: wrap;
   justify-content: center;
+    font-family: 'Barlow', sans-serif;
+
 }
 
 .card {
@@ -82,6 +92,9 @@ body {
   backdrop-filter: blur(5px);
   max-width: 340px;
   margin-bottom: 100px;
+  font-family: 'Barlow', sans-serif;
+
+  
 }
 
 .card img {
@@ -103,6 +116,9 @@ body {
   font-size: clamp(1.1rem, 1.5vw, 1.7rem);
   cursor: pointer;
   min-width: 200px;
+  font-family: 'Barlow', sans-serif;
+
+
 }
 
 .btn-play.disabled {
@@ -147,6 +163,8 @@ body {
   font-weight: bold;
   font-size: clamp(13px, 1.2vw, 17px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-family: 'Barlow', sans-serif;
+
 }
 
 .speech-bubble::before {
@@ -242,6 +260,8 @@ body {
   padding: 10px 16px;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: 'Barlow', sans-serif;
+
 }
 
 .error-message {
@@ -257,6 +277,8 @@ body {
   border-radius: 999px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
   font-size: clamp(14px, 1.2vw, 18px);
+  font-family: 'Barlow', sans-serif;
+
 }
 
 #bottom-nav {

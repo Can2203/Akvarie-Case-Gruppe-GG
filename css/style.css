@@ -7,6 +7,8 @@ body{
     margin: 0;
     background-position: bottom;
     overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+
 }
 
 .baggrund-tekst{
@@ -68,21 +70,18 @@ body{
     font-style: italic;
     font-size: 100px;
     text-transform: uppercase;
-    color: #062344;
-    text-shadow: 0 4px 4px rgba(76, 189, 214, 0.50);
+    color: #2CAA9A;
     letter-spacing: 0.1em;
     margin-top: -20px;
 }
 
 .undertekst{
     color: #EFEFEF;
-    text-shadow: 0 4px 4px rgba(100, 97, 10, 0.50);
-    font-family: Barlow;
+    font-family: 'Barlow', sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: uppercase;
     margin-top: -60px;
 
 }
