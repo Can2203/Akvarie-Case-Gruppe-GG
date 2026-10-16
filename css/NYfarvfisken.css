@@ -71,6 +71,8 @@ body{
         height: 200px;
 }  
 
+/*---------Tyrkis boble*---------*/
+
 .tyrkisbobbel {
     position: absolute;
     top: 175px;
@@ -79,13 +81,74 @@ body{
     height: auto;
 }
 
-.blåbobbel {
+.STORtyrkisbobbel {
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpiensiltyrkis {
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYfisktyrkis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+/*---------Blå boble*---------*/
+
+.blabobbel {
     position: absolute;
     top: 175px;
     right: 200px;
     width: 150px;
     height: auto;
 }
+
+
+
+.STORblabobbel {
+    position: absolute;
+    top: 175px;
+    right: 200px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensilbla {
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYblafisk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+/*---------Lilla boble---------*/
+
 
 .lillabobbel {
     position: absolute;
@@ -95,13 +158,78 @@ body{
     height: auto;
 }
 
-.grønbobbel {
+.STORlillabobbel {
+    position: absolute;
+    top: 175px;
+    right: 200px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensillilla{
+   position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto; 
+}
+
+.NYfisklilla {
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+/*---------Grøn boble---------*/
+
+
+.gronbobbel {
     position: absolute;
     top: 30px;
     right: 300px;
     width: 150px;
     height: auto;
 } 
+
+.STORgronbobbel {
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensilgron{
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYgronfisk {
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+
+
+/*---------Orange boble---------*/
 
 .orangebobbel {
     position: absolute;
@@ -110,6 +238,37 @@ body{
     width: 150px;
     height: auto;
 }
+
+.STORorangebobbel {
+    position: absolute;
+    top: 95px;
+    right: 470px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensilorange{
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYorangefisk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+/*---------Rød boble---------*/
 
 
 .rodbobbel {
@@ -120,6 +279,39 @@ body{
     height: auto;
 }
 
+.STORrodbobbel {
+    position: absolute;
+    top: 95px;
+    left: 470px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensilrod{
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYrodfisk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+
+
+/*---------Gul boble---------*/
+
 .gulbobbel {
     position: absolute;
     top: 40px;
@@ -127,6 +319,39 @@ body{
     width: 150px;
     height: auto;
 }
+
+.STORgulbobbel {
+    position: absolute;
+    top: 40px;
+    right: 675px;
+    width: 250px;
+    height: auto;
+}
+
+.NYpensilgul{
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.NYgulfisk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+
+
+
 
 
 
