@@ -70,14 +70,13 @@ body{
     font-style: italic;
     font-size: 100px;
     text-transform: uppercase;
-    color: #062344;
+    color: #2CAA9A;
     letter-spacing: 0.1em;
     margin-top: -20px;
 }
 
 .undertekst{
     color: #EFEFEF;
-    text-shadow: 0 4px 4px #1a3058;
     font-family: 'Barlow', sans-serif;
     font-size: 30px;
     font-style: normal;
