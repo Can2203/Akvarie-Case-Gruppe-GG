@@ -14,7 +14,6 @@ function hideUnhide(id) {
 
         
 
-
     } else {
         p1.style.display = "none";
         p1.style.color = "transparent";
