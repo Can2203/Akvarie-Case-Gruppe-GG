@@ -146,7 +146,21 @@ body{
 
 .boble img{
     width: 200px;
+    opacity: 1;
 }
+
+/* .boble img:active{
+    width: 200px;
+    opacity: 0.1;
+} */
+
+/* .boble img:hover{
+    width: 200px;
+    opacity: 0.1;
+} */
+
+
+
 
 .boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
     border:none;
@@ -436,12 +450,19 @@ body{
 }
 
 
+/* NYT CSS om bobler */
 
+.boble img {
+    width: 200px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
 
-
-
-
-
+.boble1, .boble2, .boble3, .boble4,
+.boble5, .boble6, .boble7, .boble8 {
+    border: none;
+    background: transparent;
+}
 
 
 
