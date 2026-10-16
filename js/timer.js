@@ -1,6 +1,6 @@
 let timer = setTimeout(function(){
     window.location.href="index.html";
-}, 300000);
+}, 200000);
 
 
 document.addEventListener("click", function(){
@@ -8,5 +8,5 @@ document.addEventListener("click", function(){
 
     timer=setTimeout(function(){
         window.location.href="index.html";
-    }, 300000);
+    }, 200000);
 });
