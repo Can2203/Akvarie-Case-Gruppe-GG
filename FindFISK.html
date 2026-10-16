@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Fisken Spil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/findFisk.css">
     <link rel="stylesheet" href="css/overgang.css">
   </head>
@@ -26,37 +29,37 @@
 
             <article class="card" role="listitem">
                 <img src="images/FindFIskPre.svg" alt="Pincetfisk">
-                <button type="button" class="btn-play disabled"disabled>Farv fisk</button>
+                <button type="button" class="btn-play" onclick="window.location.href='FarvFisken.HTML'">Farv fisk</button>
             </article>
 
             <article class="card" role="listitem">
-                <img src="images/FindFIskPre.svg" alt="Ildhalekutling">
+                <img src="images/kaploeb.svg" alt="Ildhalekutling">
                 <button type="button" class="btn-play disabled"disabled>Kapløb</button>
             </article>
         </div>
     </section>
 
     <section id="play-screen" class="screen" aria-label="Spilsscene">
-                <div id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
-                    <div class="bubble-circle">
+                <article id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
+                    <article class="bubble-circle">
                     <img src="Fisk-svg/KongeFebars.svg" alt="Gemt fisk" class="target-img">
                     <div class="speech-bubble">Kan du finde mig?</div>
-                    </div>
-                </div>
+                    </article>
+                </article>
 
-                <div class="ocean-elements" aria-label="Havet med fisk og skaldyr">
+                <section class="ocean-elements" aria-label="Havet med fisk og skaldyr">
                     <img src="Assets/Property%201=VandMandLilla.svg" class="sea-item jellyfish1" alt="VandMandLilla" onclick="wrongClick()">
                     <img src="Fisk-svg/Ildhalekutling.svg" class="sea-item fish-blue" alt="Ildhalekutling" onclick="wrongClick()">
                     <img src="Assets/Property%201=UrchinLilla.svg" class="sea-item urchin" alt="UrchinLilla" onclick="wrongClick()">
                     <img src="Assets/Property%201=VandMandGul.svg" class="sea-item jellyfish2" alt="VandMandGul" onclick="wrongClick()">
                     <img src="Fisk-svg/Pincetfisk.svg" class="sea-item fish-yellow" alt="Pincetfisk" onclick="wrongClick()">
                     <img id="hidden-fish" src="Fisk-svg/KongeFebars.svg" class="sea-item hidden-fish" alt="Målfisk" onclick="foundFish()">
-                </div>
+                </section>
 
-                <div id="success-message" class="speech-bubble-wrapper hidden" aria-live="polite">
+                <section id="success-message" class="speech-bubble-wrapper hidden" aria-live="polite">
                     <img src="Fisk-svg/KongeFebars.svg" class="target-img-large" alt="Fisk med succesmeddelelse">
                     <div class="speech-bubble">Du fandt mig!</div>
-                </div>
+                </section>
     </section>
 
     <nav id="bottom-nav" aria-label="Spilnavigation">
