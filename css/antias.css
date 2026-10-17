@@ -2883,13 +2883,16 @@ body{
 
 /*----------------------BOBLERNE----------------------*/
 
-.boble img{
+.boble img {
     width: 200px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
 }
 
-.boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
-    border:none;
-    background:transparent;
+.boble1, .boble2, .boble3, .boble4,
+.boble5, .boble6, .boble7, .boble8 {
+    border: none;
+    background: transparent;
 }
 
 .paragraph1{
