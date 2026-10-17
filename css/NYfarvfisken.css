@@ -352,6 +352,20 @@ body{
 
 
 
+.play{
+    transform:rotate(180deg);
+    position: absolute;
+    width: 1px;
+    top:550px;
+    left:800px;
+}
+
+.svg{
+    width: 130px;
+}
+
+
+
 
 
 
