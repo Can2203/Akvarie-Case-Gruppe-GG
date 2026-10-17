@@ -1,6 +1,11 @@
 /* Frederikke */
 
 
+@keyframes pulser{
+    0%, 100% {scale:0.95 1;}
+    50% {scale:0.98 1;}
+}
+
 @keyframes fadeInd{
     from{
         opacity:0;

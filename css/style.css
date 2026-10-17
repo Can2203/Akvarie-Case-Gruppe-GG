@@ -91,5 +91,9 @@ body{
 }
 
 
+@keyframes svoem{
+    0%, 100% {scale:0.95 1;}
+    50% {scale:0.98 1;}
+}
 
 
