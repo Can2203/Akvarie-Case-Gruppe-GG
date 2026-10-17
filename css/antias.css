@@ -137,6 +137,12 @@ body{
 
 .Antias img{
     width: 400px;
+    animation:pulser 1.3s ease-in-out infinite;
+}
+
+@keyframes pulser{
+    0%, 100% {scale:0.95 1;}
+    50% {scale:0.98 1;}
 }
 
 
