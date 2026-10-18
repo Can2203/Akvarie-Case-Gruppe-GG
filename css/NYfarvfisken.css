@@ -31,7 +31,7 @@ body{
 
 .vskift {
     position: absolute;
-    top: 350px;
+    top: 450px;
     left: 150px;
     transform: translate(-50%, -50%);
     width: 100px;
@@ -40,7 +40,7 @@ body{
 
 .hskift {
     position: absolute;
-    top: 350px;
+    top: 450px;
     right: 50px;
     transform: translate(-50%, -50%);
     width: 100px;
@@ -71,6 +71,15 @@ body{
         height: 200px;
 }  
 
+.DETDERKOMMERFREM{
+    display: none;
+}
+
+
+
+
+
+
 /*---------Tyrkis boble*---------*/
 
 .tyrkisbobbel {
@@ -83,11 +92,13 @@ body{
 
 .STORtyrkisbobbel {
     position: absolute;
-    top: 175px;
-    left: 175px;
+    top: 125px;
+    left: 125px;
     width: 250px;
     height: auto;
+    
 }
+
 
 .NYpiensiltyrkis {
     position: absolute;
@@ -122,8 +133,8 @@ body{
 
 .STORblabobbel {
     position: absolute;
-    top: 175px;
-    right: 200px;
+    top: 135px;
+    right: 150px;
     width: 250px;
     height: auto;
 }
@@ -160,8 +171,8 @@ body{
 
 .STORlillabobbel {
     position: absolute;
-    top: 175px;
-    right: 200px;
+    top: -4px;
+    left: 250px;
     width: 250px;
     height: auto;
 }
@@ -200,8 +211,8 @@ body{
 
 .STORgronbobbel {
     position: absolute;
-    top: 30px;
-    right: 300px;
+    top: -5px;
+    right: 245px;
     width: 250px;
     height: auto;
 }
@@ -241,8 +252,8 @@ body{
 
 .STORorangebobbel {
     position: absolute;
-    top: 95px;
-    right: 470px;
+    top: 50px;
+    right: 425px;
     width: 250px;
     height: auto;
 }
@@ -281,8 +292,8 @@ body{
 
 .STORrodbobbel {
     position: absolute;
-    top: 95px;
-    left: 470px;
+    top: 50px;
+    left: 420px;
     width: 250px;
     height: auto;
 }
@@ -322,8 +333,8 @@ body{
 
 .STORgulbobbel {
     position: absolute;
-    top: 40px;
-    right: 675px;
+    top: -6px;
+    right: 630px;
     width: 250px;
     height: auto;
 }
