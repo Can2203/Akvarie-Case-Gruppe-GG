@@ -136,7 +136,21 @@ function hideUnhide(id) {
 }
 
 
+const nemoLyd=document.querySelector("#nemo-lyd");
+const nemoPaamindelse= new Audio ("Lyd/nemo-repeat.mp3")
+let nemoTimer;
 
+function startNemoTimer(){
+    clearTimeout(nemoTimer);
+
+    nemoTimer=setTimeout(function(){
+        nemoPaamindelse.play();
+    },30000);
+}
+
+nemoLyd.addEventListener("ended", startNemoTimer);
+nemoPaamindelse.addEventListener("ended", startNemoTimer);
+document.addEventListener("click", startNemoTimer);
 
 
 
