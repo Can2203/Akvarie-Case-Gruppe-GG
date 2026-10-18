@@ -2,7 +2,7 @@
 
 let timer = setTimeout(function(){
     window.location.href="index.html";
-}, 200000);
+}, 180000);
 
 
 document.addEventListener("click", function(){
@@ -10,5 +10,5 @@ document.addEventListener("click", function(){
 
     timer=setTimeout(function(){
         window.location.href="index.html";
-    }, 200000);
+    }, 180000);
 });

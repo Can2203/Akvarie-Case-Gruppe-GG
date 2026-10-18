@@ -225,3 +225,30 @@ function wrongClick() {
   updateScore();
   showErrorMessage();
 }
+
+// Frederikke - sprutte
+
+const aktivitetsLyd=document.querySelector("#sprutte-aktiviteter");
+let gentag;
+
+aktivitetsLyd.addEventListener("ended", function() {
+  clearTimeout(gentag);
+
+gentag=setTimeout(function(){
+  aktivitetsLyd.play()
+},30000);
+});
+
+const aktivitetsBoble=document.querySelector(".taleboble");
+
+aktivitetsLyd.addEventListener("play",function(){
+  aktivitetsBoble.classList.add("vis");
+});
+
+aktivitetsLyd.addEventListener("ended", function(){
+  aktivitetsBoble.classList.remove("vis");
+});
+
+if (!aktivitetsLyd.paused){
+  aktivitetsBoble.classList.add("vis");
+}
