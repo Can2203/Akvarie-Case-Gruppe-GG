@@ -22,6 +22,9 @@ body{
     
 }
 
+.lyd{
+    width: 50px;
+}
 
 .Rogfarvetkirurgfisk{
     background: transparent;
@@ -64,6 +67,7 @@ body{
 .Nemo img{
     width: 400px;
     transform: scaleX(-1);
+    z-index:5;
 }
 
 
@@ -95,6 +99,7 @@ body{
     width: 145px;
     transform: scaleX(-1);
     opacity: 25%;
+    z-index: -2;
 }
 
 
@@ -139,14 +144,6 @@ body{
     width: 150px;
     opacity: 25%;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -220,7 +217,12 @@ body{
     left:30px;
 }
 
-
+.lyd1{
+    position: relative;
+    bottom:350px;
+    left:125px;
+    z-index:2;
+}
 
 /*----------------------boble 2----------------------*/
 
@@ -253,7 +255,12 @@ body{
     left:130px;
 }
 
-
+.lyd2{
+    position: relative;
+    bottom:215px;
+    left:220px;
+    z-index:2;
+}
 
 /*----------------------boble 3----------------------*/
 
@@ -286,7 +293,12 @@ body{
     left:320px;
 }
 
-
+.lyd3{
+    position: relative;
+    bottom:105px;
+    left:405px;
+    z-index:2;
+}
 
 /*----------------------boble 4----------------------*/
 
@@ -317,6 +329,13 @@ body{
     position: absolute;
     bottom: 100px;
     left:520px;
+}
+
+.lyd4{
+    position: relative;
+    bottom:30px;
+    left:600px;
+    z-index:2;
 }
 
 
@@ -352,6 +371,14 @@ body{
 }
 
 
+.lyd5{
+    position: relative;
+    bottom:30px;
+    left:830px;
+    z-index:2;
+}
+
+
 /*----------------------boble 6----------------------*/
 
 #paragraph6{
@@ -383,6 +410,15 @@ body{
     right:315px;
 }
 
+.lyd6{
+    position: relative;
+    bottom:100px;
+    left:1020px;
+    z-index:2;
+}
+
+
+
 /*----------------------boble 7----------------------*/
 
 #paragraph7{
@@ -412,6 +448,13 @@ body{
     position:absolute;
     bottom:260px;
     right:120px;
+}
+
+.lyd7{
+    position: relative;
+    bottom:210px;
+    left:1210px;
+    z-index:2;
 }
 
 
@@ -446,8 +489,30 @@ body{
     right:30px;
 }
 
+.lyd8{
+    position: relative;
+    bottom:350px;
+    left:1295px;
+    z-index:2;
+}
 
 
+
+
+
+/* NYT CSS om bobler */
+
+.boble img {
+    width: 200px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.boble1, .boble2, .boble3, .boble4,
+.boble5, .boble6, .boble7, .boble8 {
+    border: none;
+    background: transparent;
+}
 
 
 

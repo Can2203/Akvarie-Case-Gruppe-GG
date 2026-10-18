@@ -12,7 +12,6 @@ body{
 }
 
 
-
 .overskriftlof{
     font-size: 60px;
     text-align: center;
@@ -36,11 +35,6 @@ body{
     width: 370px;
     
 }
-
-
-
-
-
 
 
 
@@ -142,9 +136,8 @@ body{
 
 .Antias img{
     width: 150px;
+    animation:pulser 1.3s ease-in-out infinite;
 }
-
-
 
 
 
@@ -239,12 +232,12 @@ body{
     transform:rotate(180deg);
     position: absolute;
     width: 1px;
-    top:580px;
-    left:775px;
+    top:550px;
+    left:800px;
 }
 
 .svg{
-    width: 90px;
+    width: 130px;
 }
 
 

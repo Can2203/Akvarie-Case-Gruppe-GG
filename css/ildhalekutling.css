@@ -23,6 +23,10 @@ body{
 }
 
 
+.lyd{
+    width: 50px;
+}
+
 .Rogfarvetkirurgfisk{
     background: transparent;
     position:relative;
@@ -149,22 +153,21 @@ body{
 
 
 
-
-
-
-
-
-
 /*----------------------BOBLERNE----------------------*/
 
-.boble img{
+.boble img {
     width: 200px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
 }
 
-.boble1, .boble2, .boble3, .boble4, .boble5, .boble6, .boble7, .boble8{
-    border:none;
-    background:transparent;
+.boble1, .boble2, .boble3, .boble4,
+.boble5, .boble6, .boble7, .boble8 {
+    border: none;
+    background: transparent;
 }
+
+
 
 .paragraph1{
     display:flex;
@@ -222,6 +225,12 @@ body{
     left:40px;
 }
 
+.lyd1{
+    position: relative;
+    bottom:350px;
+    left:125px;
+    z-index:2;
+}
 
 
 /*----------------------boble 2----------------------*/
@@ -255,6 +264,12 @@ body{
     left:140px;
 }
 
+.lyd2{
+    position: relative;
+    bottom:215px;
+    left:220px;
+    z-index:2;
+}
 
 
 /*----------------------boble 3----------------------*/
@@ -288,6 +303,12 @@ body{
     left:330px;
 }
 
+.lyd3{
+    position: relative;
+    bottom:105px;
+    left:405px;
+    z-index:2;
+}
 
 
 /*----------------------boble 4----------------------*/
@@ -321,6 +342,12 @@ body{
     left:520px;
 }
 
+.lyd4{
+    position: relative;
+    bottom:30px;
+    left:600px;
+    z-index:2;
+}
 
 /*----------------------boble 5----------------------*/
 
@@ -353,6 +380,12 @@ body{
     left:740px;
 }
 
+.lyd5{
+    position: relative;
+    bottom:30px;
+    left:830px;
+    z-index:2;
+}
 
 /*----------------------boble 6----------------------*/
 
@@ -383,6 +416,13 @@ body{
     position:absolute;
     bottom:150px;
     right:300px;
+}
+
+.lyd6{
+    position: relative;
+    bottom:100px;
+    left:1020px;
+    z-index:2;
 }
 
 /*----------------------boble 7----------------------*/
@@ -416,6 +456,12 @@ body{
     right:100px;
 }
 
+.lyd7{
+    position: relative;
+    bottom:210px;
+    left:1210px;
+    z-index:2;
+}
 
 /*----------------------boble 8----------------------*/
 
@@ -448,6 +494,25 @@ body{
     right:30px;
 }
 
+.lyd8{
+    position: relative;
+    bottom:350px;
+    left:1295px;
+    z-index:2;
+}
+
+
+.boble img {
+    width: 200px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.boble1, .boble2, .boble3, .boble4,
+.boble5, .boble6, .boble7, .boble8 {
+    border: none;
+    background: transparent;
+}
 
 
 

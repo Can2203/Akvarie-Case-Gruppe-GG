@@ -104,7 +104,6 @@ body {
   width: clamp(220px, 22vw, 290px);
   height: clamp(170px, 17vw, 220px);
   object-fit: cover;
-  border-radius: 12px;
   margin-bottom: 12px;
   border-radius: 20px;
 }
@@ -310,3 +309,33 @@ body {
 .home-btn { background-image: url('../Icons/Hjem.svg');  background-color: var(--navKnap1); width: 140px; height: 140px; }
 .play-btn { background-image: url('../Icons/LynAktiviteter.svg'); background-color: var(--navKnap2); width: 140px; height: 140px; }
 .book-btn { background-image: url('../Icons/Book.svg'); background-color: var(--navKnap3); width: 140px; height: 140px; }
+
+
+
+/* Frederikke */
+.sprutte {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    right: 30px;    
+    top: 50px;   
+    scale: -1 1;
+    z-index: 2;
+    animation:sprutteVip 3s ease-in-out infinite;
+}
+
+@keyframes sprutteVip {
+    0%, 100% { translate: 0 0; }
+    50%      { translate: 0 -20px; }
+}
+
+@keyframes armVift{
+  0%, 100%{rotate:0deg;}
+  50% {rotate:3deg;}
+}
+
+.sprutte .ben{
+  animation:armVift 3s ease-in-out infinite;
+  transform-box:fill-box;
+  transform-origin:top center;
+}
