@@ -23,7 +23,7 @@ const fishOptions = [
   'Fisk-svg/Nemo.svg',
   'Fisk-svg/Paletkirug.svg',
   'Fisk-svg/Pincetfisk.svg',
-  'Fisk-svg/Rogfarvetkirug.svg'
+  'Fisk-svg/Rogfarvetkirrug.svg'
 ];
 
 const seaItems = Array.from(document.querySelectorAll('.sea-item'));
@@ -151,6 +151,7 @@ function chooseRandomFish() {
     const fallbackPath = toAssetUrl(fishOptions[Math.floor(Math.random() * fishOptions.length)]);
     const fishPath = decoyPaths.shift() || fallbackPath;
     item.src = fishPath;
+    item.alt = fishPath.substring(fishPath.lastIndexOf('/') + 1).replace(/\.svg$/i, '');
     placeItem(item, usedPositions);
   });
 }
