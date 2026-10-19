@@ -22,55 +22,7 @@
             <h1> Aktiviteter</h1>
         </section>
 
-        
-        <section class="menu-cards" role="list">
-            <article class="card" role="listitem">
-                <img src="images/FindFIskPre.svg" alt="Find fisken cover">
-                <button type="button" class="btn-play" onclick="startGame()">Find Fisken</button>
-            </article>
-
-            <article class="card" role="listitem">
-                <img src="images/Farvfisken 2.svg" alt="Pincetfisk">
-                <button type="button" class="btn-play" onclick="window.location.href='NYfarvfisken.html'">Farv fisk</button>
-            </article>
-
-            <article class="card" role="listitem">
-                <img src="images/kaploeb.svg" alt="Ildhalekutling">
-                <button type="button" class="btn-play disabled"disabled>Kapløb</button>
-            </article>
-        </section>
-
-
-
-    </section>
-
-    <section id="play-screen" class="screen" aria-label="Spilsscene">
-                <article id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
-                    <article class="bubble-circle">
-                    <img src="Fisk-svg/KongeFebars.svg" alt="Gemt fisk" class="target-img">
-                    <div class="speech-bubble">Kan du finde mig?</div>
-                    </article>
-                </article>
-
-                <section class="ocean-elements" aria-label="Havet med otte fisk">
-                    <img src="Fisk-svg/Antais.svg" class="sea-item fish-blue" alt="Antais" onclick="wrongClick()">
-                    <img src="Fisk-svg/Hugofisk.svg" class="sea-item fish-yellow" alt="Hugofisk" onclick="wrongClick()">
-                    <img src="Fisk-svg/Ildhalekutling.svg" class="sea-item fish-blue" alt="Ildhalekutling" onclick="wrongClick()">
-                    <img id="hidden-fish" src="Fisk-svg/KongeFebars.svg" class="sea-item hidden-fish" alt="Målfisk" onclick="foundFish()">
-                    <img src="Fisk-svg/Nemo.svg" class="sea-item fish-yellow" alt="Nemo" onclick="wrongClick()">
-                    <img src="Fisk-svg/Paletkirug.svg" class="sea-item fish-blue" alt="Paletkirug" onclick="wrongClick()">
-                    <img src="Fisk-svg/Pincetfisk.svg" class="sea-item fish-yellow" alt="Pincetfisk" onclick="wrongClick()">
-                    <img src="Fisk-svg/RogFarvetKirugANI.svg" class="sea-item fish-blue" alt="RogFarvetKirugANI" onclick="wrongClick()">
-                </section>
-
-                <section id="success-message" class="speech-bubble-wrapper hidden" aria-live="polite">
-                    <img src="Fisk-svg/KongeFebars.svg" class="target-img-large" alt="Fisk med succesmeddelelse">
-                    <div class="speech-bubble">Du fandt mig!</div>
-                </section>
-    </section>
-
-
-<!-- Frederikke -->
+        <!-- Frederikke -->
 <svg class="sprutte" width="1891" height="1179" viewBox="0 0 1891 1179" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Sprutte">
 <g id="Ben1" class="ben">
@@ -937,6 +889,56 @@
         <p id="velkomst-taleboble">Fiskene har gemt sig! Vil du hjælpe mig?</p>
 </div>
 <audio id="sprutte-aktiviteter" src="Lyd/aktivitet-sprutte.mp3" autoplay></audio>
+
+
+        
+        <section class="menu-cards" role="list">
+            <article class="card" role="listitem">
+                <img src="images/FindFIskPre.svg" alt="Find fisken cover">
+                <button type="button" class="btn-play" onclick="startGame()">Find Fisken</button>
+            </article>
+
+            <article class="card" role="listitem">
+                <img src="images/Farvfisken 2.svg" alt="Pincetfisk">
+                <button type="button" class="btn-play" onclick="window.location.href='NYfarvfisken.html'">Farv fisk</button>
+            </article>
+
+            <article class="card" role="listitem">
+                <img src="images/kaploeb.svg" alt="Ildhalekutling">
+                <button type="button" class="btn-play disabled"disabled>Kapløb</button>
+            </article>
+        </section>
+
+
+
+    </section>
+
+    <section id="play-screen" class="screen" aria-label="Spilsscene">
+                <article id="target-prompt" class="speech-bubble-wrapper" aria-live="polite">
+                    <article class="bubble-circle">
+                    <img src="Fisk-svg/KongeFebars.svg" alt="Gemt fisk" class="target-img">
+                    <div class="speech-bubble">Kan du finde mig?</div>
+                    </article>
+                </article>
+
+                <section class="ocean-elements" aria-label="Havet med otte fisk">
+                    <img src="Fisk-svg/Antais.svg" class="sea-item fish-blue" alt="Antais" onclick="wrongClick()">
+                    <img src="Fisk-svg/Hugofisk.svg" class="sea-item fish-yellow" alt="Hugofisk" onclick="wrongClick()">
+                    <img src="Fisk-svg/Ildhalekutling.svg" class="sea-item fish-blue" alt="Ildhalekutling" onclick="wrongClick()">
+                    <img id="hidden-fish" src="Fisk-svg/KongeFebars.svg" class="sea-item hidden-fish" alt="Målfisk" onclick="foundFish()">
+                    <img src="Fisk-svg/Nemo.svg" class="sea-item fish-yellow" alt="Nemo" onclick="wrongClick()">
+                    <img src="Fisk-svg/Paletkirug.svg" class="sea-item fish-blue" alt="Paletkirug" onclick="wrongClick()">
+                    <img src="Fisk-svg/Pincetfisk.svg" class="sea-item fish-yellow" alt="Pincetfisk" onclick="wrongClick()">
+                    <img src="Fisk-svg/RogFarvetKirugANI.svg" class="sea-item fish-blue" alt="RogFarvetKirugANI" onclick="wrongClick()">
+                </section>
+
+                <section id="success-message" class="speech-bubble-wrapper hidden" aria-live="polite">
+                    <img src="Fisk-svg/KongeFebars.svg" class="target-img-large" alt="Fisk med succesmeddelelse">
+                    <div class="speech-bubble">Du fandt mig!</div>
+                </section>
+    </section>
+
+
 
 
 <!-- Viktor -->
