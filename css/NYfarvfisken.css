@@ -30,15 +30,20 @@ body{
 }
 
 .vskift {
+    transform: rotate(180deg);
     position: absolute;
-    top: 450px;
+    top: 400px;
     left: 150px;
-    transform: translate(-50%, -50%);
     width: 100px;
     height: auto;
 }
 
-.hskift {
+.vskift svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hskift svg {
     position: absolute;
     top: 450px;
     right: 50px;
@@ -366,9 +371,16 @@ body{
 .play{
     transform:rotate(180deg);
     position: absolute;
-    width: 1px;
-    top:550px;
-    left:800px;
+    width: 125px;
+    height: 125px;
+    top: 630px;
+    left: 670px;
+}
+
+.play svg {
+    width: 100%;
+    height: 100%;
+
 }
 
 .svg{
