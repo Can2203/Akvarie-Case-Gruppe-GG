@@ -145,7 +145,7 @@ function startNemoTimer(){
 
     nemoTimer=setTimeout(function(){
         nemoPaamindelse.play();
-    },30000);
+    },15000);
 }
 
 nemoLyd.addEventListener("ended", startNemoTimer);
